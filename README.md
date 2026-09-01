@@ -1,2 +1,4 @@
-# AdvancedNLP
-Source code for Advanced NLP, Autumn 2026 
+# Advanced Network Science
+Source code for Advanced Network Science, Autumn 2026 
+---
+

@@ -1,0 +1,6 @@
+Exercise 1:
+- Install & get familiar with the libraries we'll use throughout the course. Specifically:
+  - networkx (if you don't have it already)
+  - (DONE) pytorch: get familiar with the library by running and following the code at https://pytorch.org/tutorials/beginner/examples_nn/polynomial_nn.html#sphx-glr-beginner-examples-nn-polynomial-nn-py
+  - (DONE) pytorch_geometric: follow the introduction by examples at https://pytorch-geometric.readthedocs.io/en/latest/get_started/introduction.html#learning-methods-on-graphs, running the code successfully (no need to understand exactly what's going on, that's for the future, for now the important things is that it runs without errors)
+  - (DONE) scikit-learn: reproduce the DBSCAN demo from here https://scikit-learn.org/stable/auto_examples/cluster/plot_dbscan.html#sphx-glr-auto-examples-cluster-plot-dbscan-py

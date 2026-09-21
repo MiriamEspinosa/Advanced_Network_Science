@@ -1,0 +1,8 @@
+Exercise 2:
+- To solve this exercise, you can use any networkx function you need without restrctions.
+- Assume that the network provided in this exercise package is a simplicial complex, where all cliques are simplices.
+- Detect all of its facets.
+- Is this simplicial complex pure?
+- Calculate the k_{1,0}, k_{2,0}, and k_{2,1} distributions.
+- Classify all edges into 2-saturated and 2-unsaturated.
+- Detect the 1-connected components.

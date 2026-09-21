@@ -1,0 +1,5 @@
+- data.txt contains five networks. Each line is an edge. The first and second column identify the nodes connecting to each other and the last column is the id of the network.
+- Assume a transactional graph mining setting. Count the number of networks containing the patterns in patterns.txt, using the Graph Matcher interface of networkx
+   - patterns.txt has the same shape as data.txt, with the last column identifying the pattern
+- Assume a single graph mining setting. Count the number of times each patter appears in each network.
+   - Can you see any examples where the anti-monotonicity requirement is broken?

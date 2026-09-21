@@ -1,0 +1,15 @@
+Exercise 3:
+- Paper titles are high order random walks happening on a network.
+- Reconstruct the single order network based on the random walks in the data.txt file.
+   - The nodes in this network are the words.
+   - Two words w1 and w2 are connected by a directed w1 -> w2 edge if w2 follows w1 in any title.
+   - The edge's weight is the probability that the next word from w1 is w2.
+- Reconstruct the high order network of order two based on the random walks. This means you should build the network based on trigrams.
+   - Each node is now a pair of oriented words. So node "w1,w2" means that w2 follows w1.
+   - Each edge connects pairs of pairs of nodes. For instance, trigram "w1 w2 w3" connects node "w1,w2" to "w2,w3".
+   - The edge's weight is still proportional to the probability of transition, but now it is, using the previous example, the probability of ending in w3 via w2 given that we arrived in w2 from w1.
+- Print out some examples of random walks on both structures.
+   - For the single order network, start from node "^" and end in node "$".
+   - For the 2-order network, start from a random node containing "^" and stop when the node contains "$".
+   - Compare the random walks you obtain from the two structures and reflect on their differences.
+   - NOTE: since you embedded the high order into the structure, the random walk function can be written to work on both network structures (although you don't have to do it).

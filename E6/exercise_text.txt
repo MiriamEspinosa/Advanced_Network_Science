@@ -1,0 +1,18 @@
+Exercise 6:
+
+- You're guiven a network in "data.txt" and ground truth communities for each node in the table "nodes.txt" (first column node id, second column community id)
+- Your task is to create 2D node embeddings to predict a node's community.
+- Your loss function is Adjusted Mutual Information (https://scikit-learn.org/stable/modules/generated/sklearn.metrics.adjusted_mutual_info_score.html)
+- You need to set up this as an unsupervised learning task.
+- You can play around with different solutions and see what leads to higher or lower losses:
+  - Try different ways of building embeddings:
+    - Any graph layout can give you x,y coordinates for each node that can be used for learning (https://networkx.org/documentation/stable/reference/drawing.html#module-networkx.drawing.layout)
+    - Taking the first two eigenvectors of D^{1/2}LD^{1/2}
+    - Taking the 2nd and 3rd eigenvectors of (I - A)^T(I - A)
+    - Taking the 2nd SVD vector of of D^{-1/2}AD^{-1/2}
+  - You can try different unsupervised learning algorithm from sklearn:
+    - kMeans
+    - (H)DBSCAN
+    - ...
+- The spectral embedding methos are deterministic (always the same result) but the layout isn't.
+  - Run the layout embeddings multiple times and note whether you get significantly different losses

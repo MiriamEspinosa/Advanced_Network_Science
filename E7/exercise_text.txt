@@ -1,0 +1,15 @@
+Exercise 7:
+
+- You're guiven a network in "data.txt" and ground truth communities for each node in the table "nodes.txt" (first column node id, second column community id). Note, this is the same as last exercise.
+- Your task is to create node embeddings using the Node2Vec function from torch_geometric to predict a node's community.
+  - You can start with some default parameters:
+    - embedding_dim = 128
+    - walk_length = 20
+    - context_size = 20
+    - p = 1.0
+    - q = 1.0
+- Your loss function is the default Node2Vec loss function.
+- The clustering step should be done with kMeans from scikit-learn.
+  - The quality function is AMI from scikit-learn.
+  - Since this is the same data as last week, how does Node2Vec compare withy last week's approaches?
+  - Experiment with changing Node2Vec's parameter (especially p and q) and note down the performance.

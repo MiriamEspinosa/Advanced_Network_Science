@@ -1,0 +1,8 @@
+Exercise 5:
+
+- Verify Weisfeiler-Lehman's approximation by getting the hashes of the networks in "data.txt" using networkx's weisfeiler_lehman_graph_hash.
+   - The files have the same structure of last exercise: one edge per line, the first two columns are the connected nodes and the last column identify the network.
+   - Verify whether graphs with the same hash are indeed isomorphic, using the GraphMatcher from the previous exercise
+- Calculate the structural and regular equivalence (no class version) of all pairs of nodes in "data2.txt".
+   - For the regular equivalence, remember you need the stochastic adjacency matrix and a normalized identity matrix
+   - How much do the structural and regular equivalence correlate?
